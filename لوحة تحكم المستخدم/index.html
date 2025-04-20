@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>لوحة تحكم المستخدم</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    
+</head>
+<script>
+  $(".usermenue").click(function () { 
+  $(".flipInY").append();
+  });
+</script>
+
+<body>
+
+  
+
+    <!-- # Start Navbar ..  -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="./images/logo.jpg" class="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item mx-3">
+                <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#">حجز الجلسة</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#">البحث عن أخصائي</a>
+              </li>
+              <li class="nav-item mx-3">
+                <div class="customize-input">
+                  <input class="form-control custom-shadow custom-radius border-0 bg-white text-right" type="search"
+                   placeholder="ابحث هُنا ..." aria-label="Search">
+                
+              </div>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-power svg-icon mr-2 ml-1"><path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path><line x1="12" y1="2" x2="12" y2="12"></line></svg> تسجيل الخروج</a>
+              </li>
+
+              <li class="nav-item dropdown usermenue ">
+              
+                  <a class="nav-link dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="">
+                    <img src="./images/widget-table-pic1.jpg" alt="user" class="rounded-circle" width="40">
+                    <span class="ml-2 d-none d-lg-inline-block"><span>Hello,</span> <span class="text-dark">Jason Doe</span> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down svg-icon"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+                </a>
+              
+
+                <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY ">
+                    <a class="dropdown-item"  ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user svg-icon mr-2 ml-1"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                        الملف الشخصي</a>
+                
+                    <a class="dropdown-item"  ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail svg-icon mr-2 ml-1"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        الرسائل الواردة</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item"  ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings svg-icon mr-2 ml-1"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                        إعدادات الحساب</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item"  ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-power svg-icon mr-2 ml-1"><path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path><line x1="12" y1="2" x2="12" y2="12"></line></svg>
+                        تسجيل خروج</a>
+                    <div class="dropdown-divider"></div>
+                    <div class="pl-4 text-center"><a  class="btn btn-sm btn-info">
+                            الملف الشخصي</a></div>
+                </div>
+          
+
+            </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- # End Navbar ..  -->
+
+    
+  
+    <div class="page-breadcrumb container my-5">
+      <div class="row w-100">
+          <div class="col-md-6 text-right">
+              <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">صباح الخير د.أحمد ..!</h3>
+              <div class="d-flex align-items-center">
+                  <nav aria-label="breadcrumb">
+                      <ol class="breadcrumb m-0 p-0">
+                          <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-dark">لوحة التحكم</a>
+                          </li>
+                      </ol>
+                  </nav>
+              </div>
+          </div>
+          <div class="col-md-6 text-right">
+              <div class="customize-input float-right">
+                  <select class="custom-select custom-select-set form-control bg-white border-1 custom-shadow custom-radius">
+                      <option selected="">Jan</option>
+                      <option value="1">Feb</option>
+                      <option value="2">Mar</option>
+                      <option value="2">Apr</option>
+                      <option value="2">May</option>
+                      <option value="2">Jun</option>
+                      <option value="2">Jul</option>
+                      <option value="2">Aug</option>
+                      <option value="2">Sep</option>
+                      <option value="2">Oct</option>
+                      <option value="2">Nov</option>
+                      <option value="2">Dec</option>
+                      
+                      
+                  </select>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <div class="container">
+          <div class="stats row d-flex justify-content-center;">
+              <div class=" col-md-3 stat-box">
+                <div>
+                  <h4>الجلسات المحجوزة</h4>
+                  <h5>لم تنجز بعد</h5>
+                </div>
+
+                  <p>5</p>
+                  
+              </div>
+              <div class=" col-md-3  stat-box">
+                <div>
+                  <h4>الجلسات المكتملة</h4>
+                  <h5>تم انجازها سابقاَ</h5>
+                </div>
+                  <p>5</p>
+              </div>
+              <div class=" col-md-3 stat-box">
+                <div>
+                  <h4>الأسئلة الواردة</h4>
+                  <h5>استفسارات المستخدمين</h5>
+                </div>
+                  <p>5</p>
+              </div>
+              <div class=" col-md-3 stat-box">
+                <div>
+                  <h4>المقالات المقروءة</h4>
+                  <h5>مقالات تمت قرائتها</h5>
+                </div>
+                  <p>5</p>
+              </div>
+          </div>
+    </div>
+
+          <div class="sessions-table container my-4">
+            <div class="row w-100 m-3">
+              <div class="col-md-6 text-right">
+                <h2 class="text-muted font-weight-bold">كافة الجلسات</h2>
+              </div>
+              <div class="col-md-6 text-left">
+                <div class="customize-input2 d-flex">
+                  <select class="custom-select custom-select-set form-control custom-shadow bg-white custom-radius border-0 text-muted font-weight-bold ">
+                  <option selected="" class="">المزيد</option>
+                  <option >المحجوزة</option>
+                  <option value="completed">المكتملة</option>
+                  <option value="cancled">الملغية</option>
+                  <option value="cancled">قيد الانتظار</option>
+                </select>
+
+                <div class="customize-input mx-3 text-center">
+                  <a href="#" class="form-control  d-flex bg-white border-0 text-decoration-none fw-bold custom-shadow custom-radius px-5">
+                      <h5 class="mx-2">+</h5>
+                      إضافة تذكرة جديدة
+                      
+                  </a>
+              </div>
+
+                </div>
+                
+              </div>
+            </div>
+            
+              
+              <table>
+                  <thead>
+                      <tr>
+                          <th>اسم الاخصائي</th>
+                          <th>التاريخ</th>
+                          <th>الوقت</th>
+                          <th>الحالة</th>
+                          <th>الإجراء</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td style="width: 50px;">
+                          <div class="d-flex">
+                            <img src="./images/widget-table-pic2.jpg" class="Dr-image">
+                            <div class="d-flex Dr-details">
+                              <h5> د.محمد علي</h5> 
+                              <p> Kristeen@gmail.com</p> 
+                            </div>
+                        </div>
+                          </td>
+                          <td>24/4/2025</td>
+                          <td>صباحا 10:00</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                            <div class="stats-icon-sucess mt-2"></div>
+                              <p class="mx-2">محجوزة</p>
+                            </div>
+                          </td>
+                          <td><button>الغاء الجلسة</button></td>
+                          <td>
+                            <button class="btn-action ">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-3 feather-icon"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+                            </button>
+                            <button class="btn-action">
+                              <html lang="en">
+                              <head>
+                                <meta charset="UTF-8">
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <title>Trash Icon</title>
+                                
+                                <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+                            
+                              </head>
+                              <body>
+          
+                                <a href="#" class="btn">
+                                  <i class="fas fa-trash-alt"></i>
+                                </a>
+
+                              </body>
+                          
+                              </button>
+                        </td>
+                      </tr>
+                    <!-- ******** -->
+
+                    <tr>
+                      <td style="width: 50px;">
+                      <div class="d-flex">
+                        <img src="./images/widget-table-pic1.jpg" class="Dr-image">
+                        <div class="d-flex Dr-details">
+                          <h5> د. سارة الاحمدي</h5> 
+                          <p>hgover@gmail.com</p> 
+                        </div>
+                    </div>
+                      </td>
+                      <td>24/4/2025</td>
+                      <td>صباحا 10:00</td>
+                      <td>
+                        <div class="d-flex justify-content-center">
+                        <div class="stats-icon-warning mt-1"></div>
+                          <p class="mx-2"> قيد الانتظار</p>
+                        </div>
+                      </td>
+                      <td><button>الغاء الجلسة</button></td>
+                      <td>
+                        <button class="btn-action ">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-3 feather-icon"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+                        </button>
+                        <button class="btn-action">
+                          <html lang="en">
+                          <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>Trash Icon</title>
+                        
+                            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+                        
+                          </head>
+                          <body>
+      
+                            <a href="#" class="btn">
+                              <i class="fas fa-trash-alt"></i>
+                            </a>
+
+                          </body>
+                      
+                          </button>
+                    </td>
+                  </tr>
+                  </tr>
+
+                    <!-- ******** -->
+
+                    <tr>
+                      <td style="width: 50px;">
+                      <div class="d-flex">
+                        <img src="./images/widget-table-pic4.jpg" class="Dr-image">
+                        <div class="d-flex Dr-details">
+                          <h5> د.  هالة مالكي</h5> 
+                          <p>hgover@gmail.com</p> 
+                        </div>
+                    </div>
+                      </td>
+                      <td>24/4/2025</td>
+                      <td>صباحا 10:00</td>
+                      <td>
+                        <div class="d-flex justify-content-center">
+                        <div class="stats-icon-canceld mt-2"></div>
+                          <p class="mx-2"> ملغية</p>
+                        </div>
+                      </td>
+                      <td><button>إعادة الحجز</button></td>
+                      <td>
+                        <button class="btn-action ">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-3 feather-icon"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+                        </button>
+                        <button class="btn-action">
+                          <html lang="en">
+                          <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>Trash Icon</title>
+                          
+                            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+                        
+                          </head>
+                          <body>
+      
+                            <a href="#" class="btn">
+                              <i class="fas fa-trash-alt"></i>
+                            </a>
+
+                          </body>
+                      
+                          </button>
+                    </td>
+                  </tr>
+                  </tr>
+                  
+                  </tbody>
+              </table>
+          </div>
+
+
+          <div class="container hint-div my-5">
+            <div class="row w-100">
+              <div class="col-md-4">
+                <div class="hint-section my-2 d-flex">
+                  <div class="hint-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                  </div>
+                  <div class="hint-description px-3">
+                    <h5>يوجد لديك حجز جديد !</h5>
+                    <p>اضغط لرؤية تفاصيل الحجز</p>
+                  </div>
+                </div>
+                <!-- ********** -->
+                <div class="hint-section my-2 d-flex">
+                  <div class="hint-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>                  </div>
+                  <div class="hint-description px-3">
+                    <h5>يوجد لديك رسالة جديد !</h5>
+                    <p>اضغط لرؤية تفاصيل الحجز</p>
+                  </div>
+                </div>
+                <!-- ********** -->
+                <div class="hint-section my-2 d-flex">
+                  <div class="hint-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                  </div>
+                  <div class="hint-description px-3">
+                    <h5>يوجد لديك حجز جديد !</h5>
+                    <p>اضغط لرؤية تفاصيل الحجز</p>
+                  </div>
+                </div>
+                <!-- ********** -->
+
+              </div>
+              <!-- ******** -->
+              <div class="col-md-8">
+                <div class="Dr-list">
+                  <div class="hint-section my-2 d-flex">
+                    <div class="hint-icon">
+                      <img src="./images/widget-table-pic4.jpg" class="Dr-image">
+                    </div>
+                    <div class="hint-description d-flex px-3">                                        
+                        <div class="d-flex Dr-details">
+                          <h5> د.  هالة مالكي</h5> 
+                          <p>hgover@gmail.com</p> 
+                        </div>
+                    </div>
+
+                    <div class="desc-dr" style="text-align: start;">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Iusto ipsum optio nihil molestias fugiat, 
+                         doloremque eaque at molestiae facere ipsam? Nam,
+                          molestiae? Ipsum fuga molestiae ducimus vitae numquam ipsam facere.
+                      </p>
+                    </div>
+
+                  </div>
+              
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="articles container mb-5">
+            <div class="row">
+              <h2>مقالات مقترحة لك</h2>
+              <a href="#">كيف تتعامل مع التوتر والقلق؟</a>
+              <a href="#">نصائح للنوم الصحي والاسترخاء</a>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Website Footer</title>
+      <link rel="stylesheet" href="style.css" />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      />
+    </head>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <p>
+            Providing online mental health support by connecting users with
+            qualified psychologists.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Find a Psychologist</a></li>
+            <li><a href="#">Book a Session</a></li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#" style="color: black;"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2025 Mental Health Platform | All Rights Reserved
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+/*sally sobeh*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.p1{
+    color: white;
+    text-align: center;
+    font-weight: 50px;
+    font-size:  50px;
+}
+
+.p2{
+    color: white;
+    text-align: center;
+ 
+}
+.but1{
+  width: 180px;
+  height: 40px;
+  margin-top: 25px;
+  border-radius: 7px;
+  border-style: none;
+  margin-left: 900px;
+  background-color:#fa694e ;
+  color: white;
+
+
+}
+.div1{
+    background-color: black;
+    padding-bottom: 150px;
+    padding-top: 25px;
+}
+i{
+    background-color: white;
+    border-radius: 55%;
+    border: 1px solid gray;
+    padding: 22px;
+}
+.div2{
+    display: flex;
+    margin-top: 78px;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-top: 6px;
+    margin-bottom: 90px;
+    gap: 40px;
+}
+
+.div3{
+    display: flex;
+    border: 1px solid #6e6c6c;
+    width: 850px;
+    height: 300px;
+    gap: 25px;
+    margin-left: 300px;
+
+}
+.div-pa1{
+    background-color: gray;
+    width: 1000px;
+}
+.par3{
+    margin-top: 35px;
+    color: gray;
+}
+/* i{
+    color: #8f8f8f;
+    margin-left: 390px;
+    border-style: none; 
+} */
+.but2{
+    background-color: red;
+    color: white;
+    height: 30px;
+    width: 160px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+   border-style: none;
+
+
+}
+.div4{
+    margin-top: 90px;
+    margin-bottom: 90px;
+    margin-left: 250px;
+}
+.div5{
+    display: flex;
+    gap: 25px;
+    margin: 20px;
+}
+
+.div_pa3{
+    width: 300px;
+    height: 250px;
+    background-color: black;
+    padding: 15px;
+}
+.div6{
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.head1{
+    text-align: center;
+    font-size: 60px;
+    color: gray;
+    padding-bottom: 20px;
+}
+.par1{
+
+    text-align: center;
+    font-size: 30px;
+    color: gray;
+}
+.div7{
+    background-color: gray;
+    margin-left: 50px;
+    margin-right: 200px;
+    width: 1300px;
+    height: 650px;
+   
+}
+.div7_7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.divs7{
+    width: 300px;
+    height: 90px;
+    background-color:black;
+    text-align: center;
+    color:red;
+    padding: 25px;
+}
+.divs7 head{
+    margin: 0;
+}
+.div8{
+    display: flex;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+.form1
+{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+  
+}
+
+.Name
+{
+  width: 300px;
+  height: 40px;  
+  background-color:white;
+}
+
+.Ema
+{ width: 300px;
+    height: 40px;  
+    background-color:white;
+}
+
+.Sub{
+        width: 700px;
+        height: 35px;  
+        margin-bottom: 25px;
+        background-color:white;
+    }
+ .messa{
+            width: 700px;
+            height: 120px;  
+            background-color: white;
+        }
+
+        
+ .butt_1
+    {     
+        width: 700px;
+        height: 35px;  
+        background-color:red;
+        border-style: none;
+    }
+
+
+
+.form_div9{
+  margin-bottom: 20px;
+ 
+}
+.pa_div9{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.head1{
+    color: #000;
+}
+/* Footer Styles */
+.footer {
+  background: aliceblue;
+  color: black;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+
+}
+.footer-container h3{
+  font-size: 40px;
+}
+
+.footer-column {
+  width: 30%;
+  min-width: 250px;
+  margin-bottom: 20px;
+
+}
+
+.footer h3 {
+  color: #7494ec;
+  margin-bottom: 15px;
+}
+.footer-column a{
+  color: black;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #7494ec;
+}

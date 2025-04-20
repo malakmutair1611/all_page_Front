@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>حجز الجلسات</title>
+    <link rel="stylesheet" href="sesstyle.css" />
+  </head>
+  <body>
+    <header>
+      <h1>حجز الجلسات النفسية</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="sessions.html">حجز الجلسات</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <form id="bookingForm">
+        <label for="sessionDate">📅 اختيار موعد الجلسة:</label>
+        <input type="datetime-local" id="sessionDate" required />
+
+        <label for="sessionType">🛋️ اختيار نوع الجلسة:</label>
+        <select id="sessionType" required>
+          <option value="">-- اختر نوع الجلسة --</option>
+          <option value="فردية">فردية</option>
+          <option value="جماعية">جماعية</option>
+          <option value="أونلاين">أونلاين</option>
+        </select>
+
+        <label for="therapist">🧑‍⚕️ اختيار الأخصائي النفسي:</label>
+        <select id="therapist" required>
+          <option value="">-- اختر الأخصائي --</option>
+          <option value="د. أحمد">د. أحمد</option>
+          <option value="د. سارة">د. سارة</option>
+          <option value="د. خالد">د. خالد</option>
+        </select>
+
+        <label for="payment">💳 تفاصيل الدفع:</label>
+        <input
+          type="text"
+          id="payment"
+          placeholder="أدخل طريقة الدفع"
+          required
+        />
+
+        <label for="userInfo">👤 بيانات التسجيل:</label>
+        <input type="text" id="userInfo" placeholder="اسمك الكامل" required />
+
+        <div class="checkbox-container">
+          <input type="checkbox" id="reminder" />
+          <label for="reminder">🔔 تذكير بمواعيد الجلسات</label>
+        </div>
+
+        <div class="checkbox-container">
+          <input type="checkbox" id="confirmation" />
+          <label for="confirmation">✅ إشعارات تأكيد حجز الجلسات</label>
+        </div>
+
+        <button type="submit">حجز الجلسة</button>
+      </form>
+      <p id="confirmationMessage" class="hidden">✅ تم حجز الجلسة بنجاح!</p>
+    </main>
+
+    <script src="sesscript.js"></script>
+  </body>
+</html>

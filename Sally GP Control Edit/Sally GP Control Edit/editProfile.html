@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تعديل الملف الشخصي</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="edit.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header  text-white">
+                        <h3 class="card-title text-center">تعديل الملف الشخصي</h3>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">الاسم الكامل</label>
+                                <input type="text" class="form-control" id="name" value="   د. أحمد علي">
+                            </div>
+                            <label for="profile_Image" class="form-label">صورة الملف الشخصي</label>
+                            <input type="file" class="form-control" id="profile_Image">
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">رقم الهاتف</label>
+                                <input type="tel" class="form-control" id="phone" value="+970 246 345 678">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">البريد الإلكتروني</label>
+                                <input type="email" class="form-control" id="email" value="Ahmed@gmail.com">
+                            </div>
+                       
+                            <div class="mb-3">
+                                <label for="specialization" class="form-label">التخصص</label>
+                                <input type="text" class="form-control" id="specialization" value="  أخصائي نفسي">
+                            </div>
+                            <div class="mb-3">
+                                <label for="bio" class="form-label">نبذة عني</label>
+                                <textarea class="form-control" id="bio" rows="4"> أخصائي نفسي معتمد مع أكثر من 7 سنوات من الخبرة في مجال الصحة النفسية  .</textarea>
+                            </div>
+    
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-primary">حفظ التعديلات</button>
+                                <button type="button" class="btn btn-secondary">إلغاء</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

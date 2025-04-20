@@ -1,0 +1,42 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: linear-gradient(90deg,#e2e2e2,#c9d6ff );
+
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #7494ec;
+    border-radius: 10px 10px 0 0;
+}
+
+
+
+
+.form-label {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #7494ec;
+    border: none;
+}
+ .btn-primary:hover {
+    background-color: #3f68c1;
+}
+
+.btn-secondary {
+    background-color: #3b4853;
+    border: none;
+}
+.btn-secondary:hover{
+background-color:#494d50;
+}
+.btn-primary:hover, .btn-secondary:hover {
+    opacity: 0.9;
+}

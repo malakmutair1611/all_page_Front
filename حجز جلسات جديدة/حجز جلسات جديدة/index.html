@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>حجز جلسات نفسية</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- رأس الموقع -->
+    <header class="header">
+      <div class="container header-container">
+        <div class="header-right">
+          <img src="./images/logo.jpg" alt="شعار الموقع" class="logo" />
+        </div>
+        <nav class="header-center">
+          <ul class="nav-links">
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#experts">الأخصائيين</a></li>
+            <li><a href="#services">الخدمات</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
+          </ul>
+        </nav>
+        <div class="header-left">
+          <a href="#login" class="btn login-btn">تسجيل الدخول</a>
+          <a href="#signup" class="btn signup-btn">إنشاء حساب</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- محتوى الموقع -->
+    <main class="main-content container">
+      <h1 class="main-title">حجز جلسات نفسية</h1>
+
+      <section class="form-section">
+        <h2>اختيار موعد الجلسة</h2>
+        <input type="datetime-local" class="input" />
+      </section>
+
+      <section class="form-section">
+        <h2>اختيار نوع الجلسة</h2>
+        <select class="input">
+          <option value="individual">جلسة فردية</option>
+          <option value="group">جلسة جماعية</option>
+          <option value="urgent">استشارة عاجلة</option>
+        </select>
+      </section>
+
+      <section class="form-section">
+        <h2><i class="fas fa-user-md"></i> اختيار الأخصائي</h2>
+        <div class="specialists">
+          <div class="specialist-card">
+            <img src="images/Ther1.jpeg" alt="أحمد محمد" />
+            <h3>د. أحمد محمد</h3>
+            <p>تخصص: اضطرابات القلق</p>
+            <button class="btn">اختيار</button>
+          </div>
+          <div class="specialist-card">
+            <img src="images/ther2.jpeg" alt="سارة خالد" />
+            <h3>د. سارة خالد</h3>
+            <p>تخصص: الاكتئاب</p>
+            <button class="btn">اختيار</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <h2>تفاصيل الدفع</h2>
+        <input type="text" class="input" placeholder="رقم البطاقة" />
+        <input type="text" class="input" placeholder="تاريخ الانتهاء" />
+        <input type="text" class="input" placeholder="CVV" />
+      </section>
+
+      <section class="form-section">
+        <h2>بيانات التسجيل</h2>
+        <input type="text" class="input" placeholder="الاسم الكامل" />
+        <input type="email" class="input" placeholder="البريد الإلكتروني" />
+        <input type="tel" class="input" placeholder="رقم الهاتف" />
+      </section>
+
+      <section class="form-section">
+        <h2>التذكير والإشعارات</h2>
+        <label><input type="checkbox" /> تذكير قبل الجلسة بـ 24 ساعة</label
+        ><br />
+        <label><input type="checkbox" /> تأكيد الحجز عبر إشعار</label>
+      </section>
+
+      <button class="btn confirm-btn">تأكيد الحجز</button>
+    </main>
+
+    <!-- تذييل الموقع -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-box">
+          <h3>من نحن</h3>
+          <p>نساعدك على التواصل مع أخصائيين نفسيين محترفين بكل سهولة وأمان.</p>
+        </div>
+        <div class="footer-box">
+          <h3>روابط سريعة</h3>
+          <ul>
+            <li><a href="#">الرئيسية</a></li>
+            <li><a href="#">الأخصائيين</a></li>
+            <li><a href="#">الحجز</a></li>
+            <li><a href="#">مقالات</a></li>
+            <li><a href="#">اتصل بنا</a></li>
+          </ul>
+        </div>
+        <div class="footer-box">
+          <h3>تابعنا</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2025 منصة الدعم النفسي | جميع الحقوق محفوظة
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

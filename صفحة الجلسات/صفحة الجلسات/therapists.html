@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الأخصائيون النفسيون</title>
+    <link rel="stylesheet" href="therstyle.css" />
+  </head>
+  <body>
+    <header>
+      <h1>الأخصائيون النفسيون</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="sessions.html">حجز الجلسات</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="specialists-container">
+      <div class="specialist-card">
+        <img src="images/ther3.jpeg" alt="د. أحمد" />
+        <h2>د. أحمد محمد</h2>
+        <p>أخصائي نفسي سريري</p>
+        <button onclick="showDetails('ahmed')">عرض التفاصيل</button>
+      </div>
+
+      <div class="specialist-card">
+        <img src="images/ther2.jpeg" alt="د. سارة" />
+        <h2>د. سارة خالد</h2>
+        <p>استشارية في العلاج السلوكي</p>
+        <button onclick="showDetails('sarah')">عرض التفاصيل</button>
+      </div>
+
+      <div class="specialist-card">
+        <img src="images/Ther1.jpeg" alt="د. خالد" />
+        <h2>د. خالد علي</h2>
+        <p>معالج نفسي للأطفال والمراهقين</p>
+        <button onclick="showDetails('khaled')">عرض التفاصيل</button>
+      </div>
+    </main>
+
+    <div id="detailsModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeDetails()">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+      </div>
+    </div>
+
+    <script src="therscript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة تحكم الأخصائي</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="Control.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+ <!-- # Start Navbar ..  -->
+ <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+    <div class="containerss">
+      <a class="navbar-brand" href="#"><img src="./image/new logo.png" class="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-3">
+            <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+          </li>
+
+
+          <li class="nav-item mx-3">
+            <div class="customize-input">
+              <input class="form-control custom-shadow custom-radius border-0 bg-white text-right" type="search"
+               placeholder="ابحث هُنا ..." aria-label="Search">
+            
+          </div>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-power svg-icon mr-2 ml-1"><path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path><line x1="12" y1="2" x2="12" y2="12"></line></svg> تسجيل الخروج</a>
+          </li>
+
+          <li class="nav-item dropdown usermenue ">
+          
+              <a class="nav-link dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="">
+                <img src="image/Doctor1.jpg" class="rounded-circle" width="40">
+                <span class="ml-2 d-none d-lg-inline-block"><span>Hello,</span> <span class="text-dark">Ahmed</span> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down svg-icon"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+            </a>
+          
+
+            
+           
+                <div class="dropdown-divider"></div>
+               
+                <div class="dropdown-divider"></div>
+            
+                <div class="dropdown-divider"></div>
+                <div class ="but" >
+       
+                    <a href="editProfile.html"><button>  تعديل الملف الشخصي</button></a>
+                       </div>
+            </div>
+      
+
+        </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- # End Navbar ..  -->
+
+
+
+<div class="page-breadcrumb container my-5">
+  <div class="row w-100">
+      <div class="col-md-6 text-right">
+          <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">صباح الخير د.أحمد ..!</h3>
+          <div class="d-flex align-items-center">
+              <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb m-0 p-0">
+                      <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-dark">لوحة التحكم</a>
+                      </li>
+                  </ol>
+              </nav>
+          </div>
+      </div>
+      <div class="col-md-6 text-right">
+          <div class="customize-input float-right">
+              <select class="custom-select custom-select-set form-control bg-white border-1 custom-shadow custom-radius">
+                  <option selected="">Jan</option>
+                  <option value="1">Feb</option>
+                  <option value="2">Mar</option>
+                  <option value="2">Apr</option>
+                  <option value="2">May</option>
+                  <option value="2">Jun</option>
+                  <option value="2">Jul</option>
+                  <option value="2">Aug</option>
+                  <option value="2">Sep</option>
+                  <option value="2">Oct</option>
+                  <option value="2">Nov</option>
+                  <option value="2">Dec</option>
+                  
+                  
+              </select>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+    <div class="container mt-4">
+  
+
+
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="cards text-center">
+                    <div class="cards-body">
+                        <h5 class="cards-title">الرسائل الجديدة</h5>
+                        <p>عدد الرسائل: <span id="new-messages">0</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cards text-center">
+                    <div class="cards-body">
+                        <h5 class="cards-title">الرسائل الواردة</h5>
+                        <p>عدد الرسائل: <span id="inbox-messages">0</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cards text-center">
+                    <div class="cards-body">
+                        <h5 class="cards-title">الرسائل الصادرة</h5>
+                        <p>عدد الرسائل: <span id="sent-messages">0</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <section class="information">
+            <div class="cards">
+                <h4>الجلسات المكتملة </h4>
+                <p>عدد الجلسات</p>
+            </div>
+            <div class="cards">
+                <h4>الجلسات القادمة  </h4>
+                <p>عدد الجلسات</p>
+            </div>
+            <div class="cards">
+                <h4>المقالات</h4>
+                <p>عدد المقالات</p>
+            </div>
+            <div class="cards">
+                <h4> متوسط التقييمات </h4>
+                <p>عدد التقييمات</p>
+            </div>
+            <div class="cards">
+                <h4>المراجعات </h4>
+                <p>عرض المراجعات</p>
+            </div>
+            <div class="cards">
+                <h4>التقويم</h4>
+                <p>عرض التقويم</p>
+            </div>
+        </section>
+
+        <section class="table-sessions">
+            <h3>الجلسات القادمة</h3>
+        
+            <table>
+                
+                    <thead >
+                        <tr>
+                            <th>اسم الاخصائي</th>
+                            <th>التاريخ</th>
+                            <th>الوقت</th>
+                            <th>الحالة</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="width: 50px;">
+                            <div class="d-flex">
+                              <div class="d-flex User-details">
+                                <h5> محمد أحمد</h5> 
+                              </div>
+                          </div>
+                            </td>
+                            <td>24/4/2025</td>
+                            <td>صباحا 10:00</td>
+                            <td>
+                              <div class="d-flex justify-content-center">
+                                <div class="stats-icon-sucess mt-1"></div>
+                                <p class="mx-2">محجوزة</p>
+                              </div>
+                            </td>
+                            <td>
+                    
+                                <html lang="en">
+                                <head>
+                                  <meta charset="UTF-8">
+                                  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                       
+                                  
+                                  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+                              
+                                </head>
+                                <body>
+            
+                               
+          
+                                </body>
+                            
+                                </button>
+                          </td>
+                        </tr>
+                      <!-- ******** -->
+          
+                      <tr>
+                        <td style="width: 50px;">
+                        <div class="d-flex">
+                          <div class="d-flex User-details">
+                            <h5>  سارة محمد</h5> 
+                          </div>
+                      </div>
+                        </td>
+                        <td>24/4/2025</td>
+                        <td>صباحا 10:00</td>
+                        <td>
+                          <div class="d-flex justify-content-center">
+                          <div class="stats-icon-warning mt-1"></div>
+                            <p class="mx-2"> قيد الانتظار</p>
+                          </div>
+                        </td>
+                        <td>
+                            </body>
+                        
+                            </button>
+                      </td>
+                    </tr>
+            </body>
+          
+            </button>
+          </td>
+          </tr>
+          </tr>
+          
+          </tbody>
+        </table>
+    
+  
+        <section class="add-article">
+            <h3>إضافة مقالة جديدة</h3>
+            <form>
+                <label for="article-title">عنوان المقال</label>
+                <input type="text" id="article-title" name="article-title" required>
+
+                <label for="article-content">المحتوى</label>
+                <textarea id="article-content" name="article-content" rows="4" required></textarea>
+
+                <button type="submit">إضافة المقال</button>
+            </form>
+        </section>
+        <footer class="footer text-center text-muted">
+            جميع الحقوق محفوظة لدى مجموعة 
+             <a href="#" class="text-decoration-none">with you</a>.
+          </footer>
+    </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <p>
+            Providing online mental health support by connecting users with
+            qualified psychologists.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Find a Psychologist</a></li>
+            <li><a href="#">Book a Session</a></li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2025 Mental Health Platform | All Rights Reserved
+      </div>
+    </footer>
+</body>
+</html>
