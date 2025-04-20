@@ -1,4 +1,49 @@
 /*sally sobeh*/
+.main-header {
+  background-color: #f8f9fc;
+  padding: 15px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  font-family: 'Cairo', sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  direction: rtl;
+}
+
+.header-right img.logo {
+  height: 50px;
+}
+
+.header-center ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+.header-center ul li a {
+  text-decoration: none;
+  color: #3f68c1;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.header-center ul li a:hover {
+  color: #7494ec;
+}
+
+.header-left {
+  display: flex;
+  gap: 10px;
+}
 *{
     margin: 0;
     padding: 0;
@@ -222,10 +267,6 @@ i{
   padding: 20px;
   max-width: 1200px;
   margin: auto;
-
-}
-.footer-container h3{
-  font-size: 40px;
 }
 
 .footer-column {
@@ -260,3 +301,4 @@ i{
 .footer a:hover {
   color: #7494ec;
 }
+
